@@ -34,6 +34,17 @@ namespace TibiaMarkerMerge
                 }
             }
 
+            if (updateMinimap.Checked)
+            {
+
+                DialogResult updateMinimapFiles = MessageBox.Show("Are you sure you want to update your minimap files?", "Update Minimap Files", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                if (updateMinimapFiles == DialogResult.No)
+                {
+                    return;
+                }
+
+            }
+
             Download download = new Download();
 
             download.FormClosing += Download_FormClosing;

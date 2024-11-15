@@ -69,8 +69,6 @@
             // updateMinimap
             // 
             updateMinimap.AutoSize = true;
-            updateMinimap.Checked = true;
-            updateMinimap.CheckState = CheckState.Checked;
             updateMinimap.Location = new Point(6, 30);
             updateMinimap.Name = "updateMinimap";
             updateMinimap.Size = new Size(139, 19);
