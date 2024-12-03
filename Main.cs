@@ -28,7 +28,7 @@ namespace TibiaMarkerMerge
         {
 
             foreach(Process p in Process.GetProcesses()) {
-                if (p.ProcessName == "client" && p.MainWindowTitle == "Tibia") {
+                if (p.ProcessName == "client" && p.MainWindowTitle.Contains("Tibia")) {
                     MessageBox.Show("Tibia client is running", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
